@@ -1,0 +1,46 @@
+{
+  "database": "twitter",
+  "tables": {
+    "tweets": {
+      "PRIMARY": "id",
+      "id": "VARCHAR(20)",
+      "time": "DATETIME",
+      "author": "VARCHAR(20)",
+      "text": "VARCHAR(300)",
+      "referenced_tweet": "VARCHAR(20)",
+      "likes": "INT",
+      "retweets": "INT",
+      "replies": "INT",
+      "quotes": "INT",
+      "lat": "DOUBLE",
+      "lng": "DOUBLE",
+      "lang": "VARCHAR(50)"
+    },
+    "hashtags": {
+      "tag": "VARCHAR(300)",
+      "tweet": "VARCHAR(20)",
+      "author": "VARCHAR(20)"
+    },
+    "cashtags": {
+      "tag": "VARCHAR(300)",
+      "tweet": "VARCHAR(20)",
+      "author": "VARCHAR(20)"
+    },
+    "mentions": {
+      "tag": "VARCHAR(300)",
+      "tweet": "VARCHAR(20)",
+      "author": "VARCHAR(20)"
+    },
+    "links": {
+      "link": "VARCHAR(300)",
+      "tweet": "VARCHAR(20)",
+      "author": "VARCHAR(20)"
+    },
+    "users": {
+      "PRIMARY": "id",
+      "id": "VARCHAR(20)",
+      "username": "VARCHAR(100)",
+      "followers": "INT"
+    }
+  }
+}
